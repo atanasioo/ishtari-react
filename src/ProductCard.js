@@ -15,7 +15,7 @@ function ProductCard({ products }) {
       const scroll = window.scrollY;
 
       const isBottom =
-        wh + scroll >= document.documentElement.scrollHeight - 100;
+        wh + scroll >= document.documentElement.scrollHeight;
 
       if (isBottom && displayedProducts < products.length && !loading) {
         setLoading(true);
